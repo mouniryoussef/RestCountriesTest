@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="4.738">
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name" time="2.073">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Lebanon"........................passed
+Then I expect the capital as "Beirut" and I expect to see error code as 200 and I expect to see error message as "".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name 2" time="0.231">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Lebanon123".....................passed
+Then I expect the capital as "" and I expect to see error code as 404 and I expect to see error message as "Not Found".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name 3" time="0.261">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Afghanistan"....................passed
+Then I expect the capital as "Kabul" and I expect to see error code as 200 and I expect to see error message as "NONE".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name 4" time="0.203">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Afghanistan123".................passed
+Then I expect the capital as "KNONEabul" and I expect to see error code as 404 and I expect to see error message as "Not Found".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name 5" time="0.226">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Angola".........................passed
+Then I expect the capital as "Luanda" and I expect to see error code as 200 and I expect to see error message as "".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country name 6" time="0.189">
+        <system-out>
+            <![CDATA[Given I have access to country name api.....................................passed
+When I provide the country name or code as "Angola 111".....................passed
+Then I expect the capital as "Luanda" and I expect to see error code as 404 and I expect to see error message as "Not Found".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country code" time="0.24">
+        <system-out>
+            <![CDATA[Given I have access to country code api.....................................passed
+When I provide the country name or code as "lb".............................passed
+Then I expect the capital as "Beirut" and I expect to see error code as 200 and I expect to see error message as "".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country code 2" time="0.23">
+        <system-out>
+            <![CDATA[Given I have access to country code api.....................................passed
+When I provide the country name or code as "lb123"..........................passed
+Then I expect the capital as "" and I expect to see error code as 400 and I expect to see error message as "Bad Request".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country code 3" time="0.272">
+        <system-out>
+            <![CDATA[Given I have access to country code api.....................................passed
+When I provide the country name or code as "afg"............................passed
+Then I expect the capital as "Kabul" and I expect to see error code as 200 and I expect to see error message as "".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="retrieve capital by country name or country code in an iterative way" name="Get capital by country code 4" time="0.205">
+        <system-out>
+            <![CDATA[Given I have access to country code api.....................................passed
+When I provide the country name or code as "afgblablabla"...................passed
+Then I expect the capital as "" and I expect to see error code as 400 and I expect to see error message as "Bad Request".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+com\restcountries\javaobjects\RegionalBloc.class
+com\restcountries\javaobjects\Translations.class
+com\restcountries\javaobjects\Country.class
+com\restcountries\testrunners\RestCountriesRunnerTest.class
+com\restcountries\stepdefinitions\RestCountrySteps.class
+com\restcountries\utilities\ConfigurationProperties.class
+com\restcountries\javaobjects\Language.class
+com\restcountries\javaobjects\Message.class
+com\restcountries\javaobjects\Currency.class
