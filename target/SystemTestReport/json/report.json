@@ -3,481 +3,51 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-26T18:42:49.492Z",
+        "start_timestamp": "2020-01-27T00:19:38.721Z",
         "line": 10,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4996800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1630652800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Lebanon\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lebanon\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 308001000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"Beirut\" and I expect to see error code as 200 and I expect to see error message as \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Beirut\"",
-                  "offset": 24
-                },
-                {
-                  "val": "200",
-                  "offset": 67
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 108
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:51.574Z",
-        "line": 11,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 998200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 210028200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Lebanon123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Lebanon123\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 13991700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"\" and I expect to see error code as 404 and I expect to see error message as \"Not Found\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 24
-                },
-                {
-                  "val": "404",
-                  "offset": 61
-                },
-                {
-                  "val": "\"Not Found\"",
-                  "offset": 102
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:51.815Z",
-        "line": 12,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 239810200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Afghanistan\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Afghanistan\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 15989500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"Kabul\" and I expect to see error code as 200 and I expect to see error message as \"NONE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Kabul\"",
-                  "offset": 24
-                },
-                {
-                  "val": "200",
-                  "offset": 66
-                },
-                {
-                  "val": "\"NONE\"",
-                  "offset": 107
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:52.080Z",
-        "line": 13,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 196887100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Afghanistan123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Afghanistan123\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1999400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"KNONEabul\" and I expect to see error code as 404 and I expect to see error message as \"Not Found\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"KNONEabul\"",
-                  "offset": 24
-                },
-                {
-                  "val": "404",
-                  "offset": 70
-                },
-                {
-                  "val": "\"Not Found\"",
-                  "offset": 111
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:52.289Z",
-        "line": 14,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 195665100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Angola\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Angola\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 26983300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"Luanda\" and I expect to see error code as 200 and I expect to see error message as \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Luanda\"",
-                  "offset": 24
-                },
-                {
-                  "val": "200",
-                  "offset": 67
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 108
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:52.521Z",
-        "line": 15,
-        "name": "Get capital by country name",
-        "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-name;;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 999700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have access to country name api",
-            "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.i_have_access_to_country_name_rest_api()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 182806900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I provide the country name or code as \"Angola 111\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Angola 111\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1999800,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I expect the capital as \"Luanda\" and I expect to see error code as 404 and I expect to see error message as \"Not Found\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Luanda\"",
-                  "offset": 24
-                },
-                {
-                  "val": "404",
-                  "offset": 67
-                },
-                {
-                  "val": "\"Not Found\"",
-                  "offset": 108
-                }
-              ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@functionalBasicTestOutlineForCountryByName"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T18:42:52.714Z",
-        "line": 24,
         "name": "Get capital by country code",
         "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-code;;2",
+        "id": "retrieve-capital-by-country-code-in-an-iterative-way;get-capital-by-country-code;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
+              "duration": 15624400,
               "status": "passed"
             },
-            "line": 19,
+            "line": 5,
             "name": "I have access to country code api",
             "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.GetRestCountryCodeEndPoint()"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByCode()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 195377500,
+              "duration": 1249912100,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I provide the country name or code as \"lb\"",
+            "line": 6,
+            "name": "I provide the country code as \"lb\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"lb\"",
-                  "offset": 38
+                  "offset": 30
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByCode(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 27984400,
+              "duration": 343726900,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I expect the capital as \"Beirut\" and I expect to see error code as 200 and I expect to see error message as \"\"",
+            "line": 7,
+            "name": "I expect the capital as \"Beirut\" and status code a 200 and I expect to see error message as \"\"",
             "match": {
               "arguments": [
                 {
@@ -486,14 +56,14 @@
                 },
                 {
                   "val": "200",
-                  "offset": 67
+                  "offset": 51
                 },
                 {
                   "val": "\"\"",
-                  "offset": 108
+                  "offset": 92
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByCode(java.lang.String,java.lang.Integer,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -505,11 +75,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-26T18:42:52.959Z",
-        "line": 25,
+        "start_timestamp": "2020-01-27T00:19:40.502Z",
+        "line": 11,
         "name": "Get capital by country code",
         "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-code;;3",
+        "id": "retrieve-capital-by-country-code-in-an-iterative-way;get-capital-by-country-code;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
@@ -517,38 +87,37 @@
             "result": {
               "status": "passed"
             },
-            "line": 19,
+            "line": 5,
             "name": "I have access to country code api",
             "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.GetRestCountryCodeEndPoint()"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByCode()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 218717300,
+              "duration": 156240600,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I provide the country name or code as \"lb123\"",
+            "line": 6,
+            "name": "I provide the country code as \"lb123\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"lb123\"",
-                  "offset": 38
+                  "offset": 30
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByCode(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5997300,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I expect the capital as \"\" and I expect to see error code as 400 and I expect to see error message as \"Bad Request\"",
+            "line": 7,
+            "name": "I expect the capital as \"\" and status code a 400 and I expect to see error message as \"Bad Request\"",
             "match": {
               "arguments": [
                 {
@@ -557,14 +126,14 @@
                 },
                 {
                   "val": "400",
-                  "offset": 61
+                  "offset": 45
                 },
                 {
                   "val": "\"Bad Request\"",
-                  "offset": 102
+                  "offset": 86
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByCode(java.lang.String,java.lang.Integer,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -576,51 +145,50 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-26T18:42:53.200Z",
-        "line": 26,
+        "start_timestamp": "2020-01-27T00:19:40.674Z",
+        "line": 12,
         "name": "Get capital by country code",
         "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-code;;4",
+        "id": "retrieve-capital-by-country-code-in-an-iterative-way;get-capital-by-country-code;;4",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1997700,
               "status": "passed"
             },
-            "line": 19,
+            "line": 5,
             "name": "I have access to country code api",
             "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.GetRestCountryCodeEndPoint()"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByCode()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 237157000,
+              "duration": 140663600,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I provide the country name or code as \"afg\"",
+            "line": 6,
+            "name": "I provide the country code as \"afg\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"afg\"",
-                  "offset": 38
+                  "offset": 30
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByCode(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 22984100,
+              "duration": 15578800,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I expect the capital as \"Kabul\" and I expect to see error code as 200 and I expect to see error message as \"\"",
+            "line": 7,
+            "name": "I expect the capital as \"Kabul\" and status code a 200 and I expect to see error message as \"\"",
             "match": {
               "arguments": [
                 {
@@ -629,14 +197,14 @@
                 },
                 {
                   "val": "200",
-                  "offset": 66
+                  "offset": 50
                 },
                 {
                   "val": "\"\"",
-                  "offset": 107
+                  "offset": 91
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByCode(java.lang.String,java.lang.Integer,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -648,51 +216,49 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-26T18:42:53.477Z",
-        "line": 27,
+        "start_timestamp": "2020-01-27T00:19:40.830Z",
+        "line": 13,
         "name": "Get capital by country code",
         "description": "",
-        "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way;get-capital-by-country-code;;5",
+        "id": "retrieve-capital-by-country-code-in-an-iterative-way;get-capital-by-country-code;;5",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1998500,
               "status": "passed"
             },
-            "line": 19,
+            "line": 5,
             "name": "I have access to country code api",
             "match": {
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.GetRestCountryCodeEndPoint()"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByCode()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 192871100,
+              "duration": 140614400,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I provide the country name or code as \"afgblablabla\"",
+            "line": 6,
+            "name": "I provide the country code as \"afgblablabla\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"afgblablabla\"",
-                  "offset": 38
+                  "offset": 30
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.RetrieveCountryByNameOrCode(java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByCode(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4996200,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I expect the capital as \"\" and I expect to see error code as 400 and I expect to see error message as \"Bad Request\"",
+            "line": 7,
+            "name": "I expect the capital as \"\" and status code a 400 and I expect to see error message as \"Bad Request\"",
             "match": {
               "arguments": [
                 {
@@ -701,14 +267,14 @@
                 },
                 {
                   "val": "400",
-                  "offset": 61
+                  "offset": 45
                 },
                 {
                   "val": "\"Bad Request\"",
-                  "offset": 102
+                  "offset": 86
                 }
               ],
-              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.VerifyCapital(java.lang.String,java.lang.Integer,java.lang.String)"
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByCode(java.lang.String,java.lang.Integer,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -720,11 +286,446 @@
         ]
       }
     ],
-    "name": "retrieve capital by country name or country code in an iterative way",
+    "name": "retrieve capital by country code in an iterative way",
     "description": "",
-    "id": "retrieve-capital-by-country-name-or-country-code-in-an-iterative-way",
+    "id": "retrieve-capital-by-country-code-in-an-iterative-way",
     "keyword": "Feature",
-    "uri": "file:src/test/java/com/restcountries/features/RestCountriesOutline.feature",
+    "uri": "file:src/test/resources/com/restcountries/features/RestCountriesByCode.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-27T00:19:40.986Z",
+        "line": 10,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125064400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Lebanon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lebanon\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31178200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"Beirut\" and status code as 200 and I expect to see error message as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Beirut\"",
+                  "offset": 24
+                },
+                {
+                  "val": "200",
+                  "offset": 52
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 93
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T00:19:41.174Z",
+        "line": 11,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125024300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Lebanon123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lebanon123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"\" and status code as 404 and I expect to see error message as \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 24
+                },
+                {
+                  "val": "404",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 87
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T00:19:41.314Z",
+        "line": 12,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156309000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Afghanistan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Afghanistan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15553400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"Kabul\" and status code as 200 and I expect to see error message as \"NONE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kabul\"",
+                  "offset": 24
+                },
+                {
+                  "val": "200",
+                  "offset": 51
+                },
+                {
+                  "val": "\"NONE\"",
+                  "offset": 92
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T00:19:41.486Z",
+        "line": 13,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 140703800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Afghanistan123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Afghanistan123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15548100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"KNONEabul\" and status code as 404 and I expect to see error message as \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"KNONEabul\"",
+                  "offset": 24
+                },
+                {
+                  "val": "404",
+                  "offset": 55
+                },
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 96
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T00:19:41.642Z",
+        "line": 14,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109355700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Angola\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Angola\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15623400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"Luanda\" and status code as 200 and I expect to see error message as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luanda\"",
+                  "offset": 24
+                },
+                {
+                  "val": "200",
+                  "offset": 52
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 93
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T00:19:41.767Z",
+        "line": 15,
+        "name": "Get capital by country name",
+        "description": "",
+        "id": "retrieve-capital-by-country-name-in-an-iterative-way;get-capital-by-country-name;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have access to country name api",
+            "match": {
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.getRestCountryEndPointByName()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109437500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide the country name as \"Angola 111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Angola 111\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.retrieveCountryByName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expect the capital as \"Luanda\" and status code as 404 and I expect to see error message as \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luanda\"",
+                  "offset": 24
+                },
+                {
+                  "val": "404",
+                  "offset": 52
+                },
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 93
+                }
+              ],
+              "location": "com.restcountries.stepdefinitions.RestCountryOutlineSteps.verifyCapitalByName(java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functionalBasicTestOutlineForCountryByName"
+          }
+        ]
+      }
+    ],
+    "name": "retrieve capital by country name in an iterative way",
+    "description": "",
+    "id": "retrieve-capital-by-country-name-in-an-iterative-way",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/restcountries/features/RestCountriesByName.feature",
     "tags": []
   }
 ]
