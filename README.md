@@ -7,7 +7,7 @@ There is a two feature files with one scenario outilene with 4 examples each. Ea
 git clone https://github.com/mouniryoussef/RestCountriesTest.git  
 cd RestCountriesTest
 
-#Use Maven
+#Use Maven  
 Open a command window and run  
 mvn package  
 This command will compile and test the feature files and also generate the jar file  
@@ -18,8 +18,8 @@ This command will run the RunnerTest that validate the cucumber features : src/t
 java -jar target/RestCountriesTest-1.0.0-SNAPSHOT.jar  
 This Command will execute the CountryApp main java class to run the country/capital application  
 
-##BBD reports
+##BBD reports  
 under target/SystemTestReport you will find 3 reports in html, json and xml format  
 
-## BDD features code refactory
+## BDD features code refactory  
 the cucumber features and step definitions are yet to be completed as we still need to refactor the code and alo performance test is in the plan to be added later
