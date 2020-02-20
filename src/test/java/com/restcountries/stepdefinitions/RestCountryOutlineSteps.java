@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -22,26 +23,28 @@ public class RestCountryOutlineSteps {
     String responseJsonData;
     Message message;
     Integer responseStatusCode;
+    Response response;
     CountryService countryservice = new CountryService();
     @Given("I have access to country name api")
-    public void getRestCountryEndPointByName() {
+    public void setRestCountryEndPointByName() {
         countryservice.setCountryEndPoint(CountryApiEnum.BY_NAME);
     }
 
     @Given("I have access to country code api")
-    public void getRestCountryEndPointByCode() {
+    public void setRestCountryEndPointByCode() {
         countryservice.setCountryEndPoint(CountryApiEnum.BY_CODE);
     }
 
     @When("I provide the country code as {string}")
     public void retrieveCountryByCode(String countryCode) {
-        Response response = countryservice.getCountryByCode(countryCode);
+        response = countryservice.getCountryByCode(countryCode);
         responseJsonData = response.jsonPath().prettify();
         responseStatusCode = response.statusCode();
     }
 
     @Then("I expect the capital as {string} and status code a {int} and I expect to see error message as {string}")
     public void verifyCapitalByCode(String expectedCapital, Integer expectedStatusCode, String expectedErrorMessage) throws IOException {
+       // response.then().body("", equalTo(5));
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 

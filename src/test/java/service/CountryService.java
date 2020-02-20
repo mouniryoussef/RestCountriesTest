@@ -1,6 +1,7 @@
 package service;
 
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import utilities.CountryApiEnum;
 import utilities.CountryProxy;
 
@@ -12,21 +13,21 @@ import static utilities.CountryProxy.getResponse;
 public class CountryService {
 
     private  String countryServiceEndpoint;
-
+    RequestSpecification specification;
     public  Response getCountryByName(String name) {
-        return given().
-                    pathParam("name", name).
-                when().
-                get(countryServiceEndpoint + "/{ name}",name);
+        specification = given().baseUri(countryServiceEndpoint).basePath("/name");
+        specification.pathParam("name", name);
+        //specification.when();
+        return specification.
+                get("/{ name}",name);
 
     }
 
     public  Response getCountryByCode(String code) {
-        return
-                given().
-                        pathParam("code", code).
-               when().
-                get(countryServiceEndpoint + "/{ code}",code);
+        specification = given().baseUri(countryServiceEndpoint).basePath(String.format("/%s", code));
+        //specification.pathParam("code", code);
+        //specification.when();
+        return specification.get();
     }
 
     public void setCountryEndPoint(CountryApiEnum countryApiEnum) {
